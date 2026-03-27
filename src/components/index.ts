@@ -9,6 +9,7 @@ export * from './MarketPanel';
 export * from './StockAnalysisPanel';
 export * from './StockBacktestPanel';
 export * from './PredictionPanel';
+export * from './PolyPortfolioPanel';
 export * from './MonitorPanel';
 export * from './SignalModal';
 export * from './PlaybackControl';

@@ -2415,3 +2415,117 @@
 .gb-total-row td { border-top: 2px solid rgba(255,255,255,0.2); }
 .gb-wow { display: block; font-size: 0.6rem; opacity: 0.85; margin-top: 1px; }
 .gb-updated { font-size: 0.65rem; opacity: 0.4; text-align: right; padding: 4px 6px; }
+
+/* ── Poly Portfolio Panel ── */
+.poly-wallet-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 6px 0;
+}
+.poly-wallet-input {
+  flex: 1;
+  background: var(--bg-secondary, rgba(255,255,255,0.05));
+  border: 1px solid var(--border, rgba(255,255,255,0.1));
+  border-radius: 4px;
+  color: var(--text, #e2e8f0);
+  font-family: inherit;
+  font-size: 10px;
+  padding: 4px 8px;
+  outline: none;
+}
+.poly-wallet-input:focus { border-color: var(--accent, #3b82f6); }
+.poly-load-btn {
+  background: var(--accent, #3b82f6);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.poly-load-btn:hover { opacity: 0.85; }
+.poly-countdown {
+  font-size: 9px;
+  color: var(--text-muted, rgba(255,255,255,0.35));
+  font-variant-numeric: tabular-nums;
+  min-width: 22px;
+  text-align: right;
+}
+.poly-empty {
+  text-align: center;
+  color: var(--text-muted, rgba(255,255,255,0.35));
+  font-size: 11px;
+  padding: 24px 8px;
+}
+.poly-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border, rgba(255,255,255,0.1));
+  margin-bottom: 4px;
+}
+.poly-metric {
+  font-size: 10px;
+  color: var(--text-dim, rgba(255,255,255,0.55));
+  font-variant-numeric: tabular-nums;
+}
+.poly-metric b {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 9px;
+  margin-right: 3px;
+  color: var(--text-muted, rgba(255,255,255,0.35));
+}
+.poly-table-header {
+  display: grid;
+  grid-template-columns: 1fr 36px 52px 48px 48px 60px 60px 48px 44px;
+  gap: 2px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border, rgba(255,255,255,0.1));
+  position: sticky;
+  top: 0;
+  background: var(--bg-panel, var(--bg, #0a0a0f));
+  z-index: 1;
+}
+.poly-table-header .poly-cell {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted, rgba(255,255,255,0.35));
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.poly-table-header .poly-cell:hover { color: var(--text, #e2e8f0); }
+.poly-table-body { overflow-y: auto; }
+.poly-row {
+  display: grid;
+  grid-template-columns: 1fr 36px 52px 48px 48px 60px 60px 48px 44px;
+  gap: 2px;
+  padding: 3px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.poly-row:hover { background: rgba(255,255,255,0.04); }
+.poly-cell {
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-dim, rgba(255,255,255,0.55));
+}
+.poly-cell-market { color: var(--text, #e2e8f0); }
+.poly-cell-side { font-weight: 600; font-size: 9px; }
+.poly-cell-right { text-align: right; }
+.poly-side-yes { color: var(--semantic-normal, #22c55e); }
+.poly-side-no { color: var(--semantic-critical, #ef4444); }
+.poly-pnl-pos { color: var(--semantic-normal, #22c55e); }
+.poly-pnl-neg { color: var(--semantic-critical, #ef4444); }
+.poly-alloc-warn { color: var(--semantic-elevated, #f59e0b); }

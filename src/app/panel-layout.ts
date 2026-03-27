@@ -18,6 +18,7 @@ import {
   AiTokensPanel,
   OtherTokensPanel,
   PredictionPanel,
+  PolyPortfolioPanel,
   MonitorPanel,
   EconomicPanel,
   ConsumerPricesPanel,
@@ -667,6 +668,7 @@ export class PanelLayoutManager implements AppModule {
     this.createPanel('commodities', () => new CommoditiesPanel());
     this.createPanel('energy-complex', () => new EnergyComplexPanel());
     this.createPanel('polymarket', () => new PredictionPanel());
+    this.createPanel('poly-portfolio', () => new PolyPortfolioPanel());
 
     this.createNewsPanel('gov', 'panels.gov');
     this.createNewsPanel('intel', 'panels.intel');
